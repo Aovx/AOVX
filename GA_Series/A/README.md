@@ -1,10 +1,10 @@
-**Release Version:**
+# Release Version:
 AOVX_AX300-XX_H2.0_V2.0.5_v09
 **Function & Feature Update：**
 1.Modify buffer to check for failed attempts
 
 
-**Release Version:**
+# Release Version:
 AOVX_AX300-XX_H2.0_V2.0.5_v08
 **Function & Feature Update：**
 1. Modify buffer write failed
@@ -13,7 +13,7 @@ AOVX_AX300-XX_H2.0_V2.0.5_v08
 4. Modify the problem of synchronizing time in a long-time shielded environment
 
 
-**Release Version:**
+# Release Version:
 AOVX_AX300-XX_H2.0_V2.0.5_v07
 **Function & Feature Update：**
 1. Modify the full battery state and the voltage value does not correspond, restart or the first start-up voltage value is low
@@ -24,7 +24,7 @@ AOVX_AX300-XX_H2.0_V2.0.5_v07
 6. Modify the text message reading
 
 
-**Release Version:**
+# Release Version:
 AOVX_AX300-XX_H2.0_V2.0.5_v06
 **Function & Feature Update：**
 1. Modify the platform OTA failure problem
@@ -32,7 +32,7 @@ AOVX_AX300-XX_H2.0_V2.0.5_v06
 3. Modify the minimum sampling and reporting time to 360s
 
 
-**Release Version:**
+# Release Version:
 AOVX_AX300-XX_H2.0_V2.0.5_v05
 **Function & Feature Update：**
 1. Modify the maximum power value, light triggers power acquisition
@@ -41,14 +41,14 @@ AOVX_AX300-XX_H2.0_V2.0.5_v05
 4. CSQ99 reacquired once
 
 
-**Release Version:**
+# Release Version:
 AOVX_AX300-XX_H2.0_V2.0.5_v04
 **Function & Feature Update：**
 1. Failed to modify SMS OTA
 2. Modify 8105 response error, OTA success did not reply
 
 
-**Release Version:**
+# Release Version:
 AOVX_AX300-XX_H2.0_V2.0.5_v03
 **Function & Feature Update：**
 1. Optimize the battery percentage, and the battery fluctuates
@@ -59,7 +59,7 @@ AOVX_AX300-XX_H2.0_V2.0.5_v03
 6. Modify the SMS to send OTA upgrade, and the command to read the SMS times out
 
 
-**Release Version:**
+# Release Version:
 AOVX_AX300-XX_H2.0_V2.0.5_v02
 **Function & Feature Update：**
 1. Add AT to query the number of WIFI and BLE, modify the return value of the FORMAT command and delete the blind zone
@@ -73,27 +73,27 @@ AOVX_AX300-XX_H2.0_V2.0.5_v02
 9. Modify the module OTA prompt version error
 
 
-**Release Version:**
+# Release Version:
 AOVX_AX300-XX_H2.0_V2.0.5_v01
 **Function & Feature Update：**
 1.Modify the name of the OTA version to be too long, causing the upgrade to fail
 
 
-**Release Version:**
+# Release Version:
 AOVX_AX300-XX_H2.0_V2.0.4_v27
 **Function & Feature Update：**
 1. Change the default positioning to GPS+GLO
 2. Modify the analysis error of the main cell of the base station, and add the message analysis of the adjacent cell
 
 
-**Release Version:**
+# Release Version:
 AOVX_AX300-XX_H2.0_V2.0.4_v26
 **Function & Feature Update：**
 1. Modify periodic sampling and periodic reporting
 2. Mileage is fixed at 0
 
 
-**Release Version:**
+# Release Version:
 AOVX_AX300-XX_H2.0_V2.0.4_v25
 **Function & Feature Update：**
 1. Modify the problem that periodic sampling will not be performed when there are too many buffer data and the report exceeds 10 minutes
@@ -101,26 +101,26 @@ AOVX_AX300-XX_H2.0_V2.0.4_v25
 
 
 
-**Release Version:**
+# Release Version:
 AOVX_AX300-XX_H2.0_V2.0.4_v24
 **Function & Feature Update：**
 1. Modify buffer data processing
 2. MNC changed to 2 bytes
 
 
-**Release Version:**
+# Release Version:
 AOVX_AX300-XX_H2.0_V2.0.4_v23
 **Function & Feature Update：**
 1.Modify the data length error in the buffer, resulting in a read error
 
 
-**Release Version:**
+# Release Version:
 AOVX_AX300-XX_H2.0_V2.0.4_v22
 **Function & Feature Update：**
 1.Modify the minimum value of the G-Sensor threshold to 30, and the maximum value of the read light value to 3000
 
 
-**Release Version:**
+# Release Version:
 AOVX_AX300-XX_H2.0_V2.0.4_v21
 **Function & Feature Update：**
 1. After modifying the server correctly, when reporting periodically, the buffer data is not reported normally
@@ -128,7 +128,7 @@ AOVX_AX300-XX_H2.0_V2.0.4_v21
 
 
 
-**Release Version:**
+# Release Version:
 AOVX_AX300-XX_H2.0_V2.0.4_v20
 **Function & Feature Update：**
 1. Add LOG to display blind area read and write offset information, light threshold limit
@@ -136,7 +136,7 @@ AOVX_AX300-XX_H2.0_V2.0.4_v20
 
 
 
-**Release Version:**
+# Release Version:
 AOVX_AX300-XX_H2.0_V2.0.4_v16
 **Function & Feature Update：**
 1. Optimize GSensor, battery power, brightness
@@ -146,7 +146,7 @@ AOVX_AX300-XX_H2.0_V2.0.4_v16
 5. Modify GIT known issues
 
 
-**Release Version:**
+# Release Version:
 AOVX_AX300-XX_H2.0_V2.0.3_v02  （archived version）
 Release Date: 
 Tue Sep 13 16:34:54 2022 +0800
@@ -177,7 +177,7 @@ Period after trigger: (2, 4) 2:Traking 4:P+D
 
 
 
-**Release Version:**
+# Release Version:
 AOVX_AX300-XX_H2.0_V2.0.3_v01
 Release Date: 
 Tue Sep 13 16:34:54 2022 +0800
@@ -186,7 +186,7 @@ Function & Feature Update:
 
 
 
-**Release Version:**
+# Release Version:
 AOVX_AX300-XX_H2.0_V2.0.2_v04
 Release Date:
 Mon Aug 22 15:35:56 2022 +0800
@@ -195,7 +195,7 @@ Function & Feature Update:
 2. Add power boost pin
 
 
-**Release Version:**
+# Release Version:
 AOVX_AX300-XX_H2.0_V2.0.2_v03
 Release Date:
 Mon Aug 15 09:47:16 2022 +0800
@@ -210,7 +210,7 @@ Function & Feature Update:
 
 
 
-**Release Version:**
+# Release Version:
 AOVX_AX300-XX_H2.0_V2.0.2_v02
 Release Date:
 Thu Aug 4 16:08:21 2022 +0800
@@ -218,7 +218,7 @@ Function & Feature Update:
 1. Support transparent transmission AT
 2. Cancel the management server by default
 3. Cancel sleep during buffer processing
-**Release Version:**
+# Release Version:
 AOVX_AX300-XX_H2.0_V2.0.2_v01
 Release Date:
 Wed Aug 3 16:06:50 2022 +0800
@@ -230,7 +230,7 @@ Function & Feature Update:
 5. Fix the occasional wrong reading of the temperature and humidity sensor
 6. Adjust the buffer length of the debug serial port
 
-**Release Version:**
+# Release Version:
 AOVX_AX300-XX_H1.2_V2.0.1_v05
 Release Date:
 Wed Jul 27 19:32:19 2022 +0800
@@ -240,7 +240,7 @@ Function & Feature Update:
 3. Fix the problem of buffer length -1
 4. Fix the sleep bug when downloading the core version
 
-**Release Version:**
+# Release Version:
 AOVX_AX300-XX_H1.2_V2.0.1_v04     
 Release Date:
 Tue Jul 26 20:25:17 2022 +0800
@@ -260,7 +260,7 @@ Function & Feature Update:
  13. Fix the problem that the network status is repeatedly set to cause a status error
 
 
-**Release Version:**
+# Release Version:
 AOVX_AX300-XX_H1.2_V2.0.1_v03   
 Release Date:
 Tue Jul 19 14:09:23 2022 +0800
@@ -269,7 +269,7 @@ Function & Feature Update:
 2. Change the command restart to restart immediately
 
 
-**Release Version:**
+# Release Version:
 AOVX_AX300-XX_H1.2_V2.0.1_v02
 Release Date:
 Mon Jul 18 15:41:03 2022 +0800

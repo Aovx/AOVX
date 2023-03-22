@@ -1,16 +1,16 @@
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.5_v06
 **Function & Feature Update:**
 1. Modify the problem that GPS is turned off when deep sleep LOCUPDATE=2
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.5_v05
 **Function & Feature Update:**
 1. Increase the global variable array storing seq to 200 seq records for each server
 2. During the sleep countdown, the trailer still enters sleep after being triggered
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.5_v04
 **Function & Feature Update:**
 1. In the AT+QISEND=0,0 process, compare the seq of the currently sent data packet with the latest seq in the global structure array every second. If they are equal, it means that the data has been successfully sent. At this point, end AT+QISEND= 0,0 process
@@ -19,27 +19,27 @@ AOVX_VX3xx-XX_H2.0_V2.0.5_v04
 2. The software reset will no longer reset the packet serial number
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.5_v03
 **Function & Feature Update:**
 1. Add AT+DO1MODE command, the default is equal to 0, when it is equal to 1, it is used for DVL; DO1 outputs high level when overspeed*
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.5_v02
 **Function & Feature Update:**
 1. Add a global structure array to save the 0x0200 serial number in the received two server 0x8001 data packets. When sending blind area data, it will compare the seq of the packet data with the seq in the saved array. If The same means data duplication;
 Discard the data in the blind area of the packet*
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.5_v01
 **Function & Feature Update:**
 1. Modification of version number
 2. Modify the readback problem of the LOCUPDATE command
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.4_v09
 **Function & Feature Update:**
 1. When the counter triggered by DI1 is directly powered off, the count will not be lost
@@ -47,14 +47,14 @@ AOVX_VX3xx-XX_H2.0_V2.0.4_v09
 3. Modify the speed threshold value when the oil circuit is turned off to 30km/h. If the vehicle speed is greater than 30km/h when the oil circuit is turned off, it will not be able to close the oil circuit when the speed drops to meet the conditions and then it will be automatically closed.
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.4_v08
 **Function & Feature Update:**
 1. The 0XF9 auxiliary information field increases the counter triggered by DI1, and the count is continuously accumulated for each trigger and the restart will not reset the number of times. AT+ASSISTMASK=16 enables this report
    In addition, add AT+DI1CNT command to query and configure the counter (required by ECOFOR on the evening of 3.6)
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.4_v07
 **Function & Feature Update:**
 SLEEPMODE:0 LOCUPDATE:0 Keep GPS on for the first two hours after entering light sleep, then turn on GPS every time you report, and turn off GPS after the package is completed
@@ -65,14 +65,14 @@ SLEEPMODE:1 LOCUPDATE:1 Turn off GPS after entering deep sleep, then keep GPS of
 SLEEPMODE:1 LOCUPDATE:2 The device will not turn off GPS when it enters sleep mode, and report the previous position
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.4_v06
 **Function & Feature Update:**
 1. Modify the GPS positioning flag BIT1 in the protocol status field. As long as the reported latitude and longitude is not empty, it will report 1, otherwise it will be 0; add BIT26 as the original function (internal use, not open to customers)
 2. The previous version used GPS+BD by default, but now it is changed to GPS+GLO by default, but it cannot be modified automatically for old devices, so it is forced to set after booting and update the configuration in flash
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.4_v05
 **Function & Feature Update:**
 1. Modify the problem that the mileage in the first two packets of data after restarting is 0
@@ -80,7 +80,7 @@ AOVX_VX3xx-XX_H2.0_V2.0.4_v05
 3. Add trigger, AT command report AT+ATREPORT
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.4_v04
 **Function & Feature Update:**
 1. Light sleep system light problem modification
@@ -94,7 +94,7 @@ SLEEPMODE:1 LOCUPDATE:1 Turn off GPS after entering deep sleep, then keep GPS of
 
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.4_v03
 **Function & Feature Update:**
 1. Fix the problem that the ID in the message is 0 after booting
@@ -104,20 +104,20 @@ AOVX_VX3xx-XX_H2.0_V2.0.4_v03
 5. Fix the problem that the deep sleep cycle wakes up without grouping and reporting
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.4_v02
 **Function & Feature Update:**
 1. The base station positioning is not reported by default (it will not be reported if the mask is configured)
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.4_v01
 **Function & Feature Update:**
 1. Base station information MNC modification
 2. The soft reset repeatedly sends the restart package problem
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.3_v18
 **Function & Feature Update:**
 1. Optimize the problem of data loss in buffer
@@ -125,51 +125,51 @@ AOVX_VX3xx-XX_H2.0_V2.0.3_v18
 
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.3_v17
 **Function & Feature Update:**
 1. Repair the blind area data loss caused by module error code 402 and 412, hang test search log ERROR|>>>RecoverBuffer
 
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.3_v16
 **Function & Feature Update:**
 1.at+locupdate=1, turn off GPS regularly after light sleep
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.3_v15
 Function & Feature Update:
 1. Turn off the cold start soft reset function of the GPS module
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.3_v14
 **Function & Feature Update:**
 1. JAMMING related AT command added
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.3_v13
 **Function & Feature Update:**
 1. Unable to locate for three minutes, GPS power off and on again, still unable to locate after two minutes GPS module cold start soft reset
 2. Store the EXTRA queue data in the blind area before the device restarts
 3. Repair the data loss of the EXTRA queue caused by the state error of the deep sleep wake-up module
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.3_v12
 **Function & Feature Update:**
 1. Light sleep can also send buffer data
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.3_v11
 **Function & Feature Update:**
 1. Increase the length of the memory queue for saving data when the save module restarts
 2. Add NOJAMMING trigger
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.3_v10
 **Function & Feature Update:**
 1. Correction of false positives at inflection point
@@ -179,7 +179,7 @@ AOVX_VX3xx-XX_H2.0_V2.0.3_v10
 5. Reduce local time error
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.3_v09
 **Function & Feature Update:**
 1. Modify the inflection point problem
@@ -187,27 +187,27 @@ AOVX_VX3xx-XX_H2.0_V2.0.3_v09
 3. Modify the module to lose data when restarting
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.3_v08
 **Function & Feature Update:**
 1. Optimization of inflection point leakage triggering problem
 2. Save the current system time in flash before each restart, and read it after restarting, so as to avoid not getting the time when there is no network and cannot locate
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.3_v07
 **Function & Feature Update:**
 1. The wake-up package condition of the deep sleep cycle is increased. After the positioning is successful or 40S after wake-up, the package data is sent directly to sleep
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.3_v06
 **Function & Feature Update:**
 1. Modify the processing of inflection point data
 2. When the QHTTPGET command does not get a reply, it is determined that the OTA has failed
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.3_v05
 **Function & Feature Update:**
 1. Optimize buffer reading and writing
@@ -216,7 +216,7 @@ AOVX_VX3xx-XX_H2.0_V2.0.3_v05
 4. After the device is powered on or restarted, if the module type is not obtained, change the device name to Vx300 (previously VM300_GL)
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.3_v04
 **Function & Feature Update:**
 1. Fix DI1_UP false alarm problem
@@ -227,26 +227,26 @@ AOVX_VX3xx-XX_H2.0_V2.0.3_v04
 6. Fix the data loss in the blind area caused by restarting without network equipment for a long time
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.3_v03
 **Function & Feature Update:**
 1. Fix the problem of acceleration misfire
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.3_v02
 **Function & Feature Update:**
 1. Fix the problem that GnssAge is not allowed
 2. Fix the problem that it takes a long time to enter hibernation
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.3_v01
 **Function & Feature Update:**
 1. Fix the problem that the company name is empty after the version upgrade
 2. Do not wait for the server to reply after the data packet is sent
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.2_v14
 **Function & Feature Update:**
 1. By default, 4G turns off VOLTE
@@ -255,26 +255,26 @@ AT+QIMS="disable"
 3. Gnss positioning galaxy is changed to GPS+GLO by default
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.2_v13
 **Function & Feature Update:**
 1. Add AT+FWNAME, you can modify the company name
 2. The GPS light does not turn on when the deep sleep cycle reports the sleep
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.2_v12
 **Function & Feature Update:**
 1. In three-wire mode, it cannot be woken up by acceleration during sleep
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.2_v11
 **Function & Feature Update:**
 1. Repair and upgrade failure cannot enter hibernation and restart
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.2_v10
 **Function & Feature Update:**
 1. Increase the GPS speed as the basis for equipment driving --> parking
@@ -282,7 +282,7 @@ AOVX_VX3xx-XX_H2.0_V2.0.2_v10
 3. Add acceleration change as the basis for judging equipment parking --> driving
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.2_v09
 **Function & Feature Update:**
 1. Fix the problem that the occasional startup package is not reported
@@ -291,19 +291,19 @@ AOVX_VX3xx-XX_H2.0_V2.0.2_v09
 4. Fix the error url fota upgrade command issued locally, the download fails, and the OTA failure message is not triggered
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.2_v08
 **Function & Feature Update:**
 1. Modify the problem that the serial number of the log is not equal to the serial number of the message
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.2_v07
 **Function & Feature Update:**
 1. HDOP outlier avoidance, set to 0 when exceeding the range
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.2_v06
 **Function & Feature Update:**
 1. Add gnsstime report to F9 field
@@ -311,7 +311,7 @@ AOVX_VX3xx-XX_H2.0_V2.0.2_v06
 3. Fix the problem that the queue data is not reported
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.2_v05
 **Function & Feature Update:**
 1. Fix the system crash problem caused by thread infinite loop
@@ -319,7 +319,7 @@ AOVX_VX3xx-XX_H2.0_V2.0.2_v05
 3. Delete the log to print: AngSpeed1:, AngSpeed2:, AngSpeed3:
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.2_v04
 **Function & Feature Update:**
 1. Fix the problem that the speed value is abnormally large due to array out-of-bounds reading
@@ -328,7 +328,7 @@ AOVX_VX3xx-XX_H2.0_V2.0.2_v04
 4. Fix the problem that SPEED_DOWN and SPEED_TURN are triggered together in log printing
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.2_v03
 **Function & Feature Update:**
 1. Repair the log printing, when the sharp deceleration is triggered, the keyword of sharp turn will be added
@@ -336,14 +336,14 @@ AOVX_VX3xx-XX_H2.0_V2.0.2_v03
 3. The trigger condition of rapid acceleration and rapid deceleration is changed to 8km/h
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.2_v02
 **Function & Feature Update:**
 1. The AGPS function needs to be verified, and the master branch should be closed first.
 2. Support DI1 and DI1_UP trigger to wake up sleeping devices and report messages
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.2_v01
 **Function & Feature Update:**
 1. Turn on the AGPS function
@@ -351,43 +351,43 @@ AOVX_VX3xx-XX_H2.0_V2.0.2_v01
 3. DI1 supports double edge interrupt
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.1_v08
 **Function & Feature Update:**
 1. Repair sending "AT+btmode=31,0" AT command, the device data is out of bounds and hangs
 2. After repairing "AT+BTENABLE=0", the device is still scanning Bluetooth information from the LOG, and the Bluetooth information will also be reported in the message
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.1_v07
 **Function & Feature Update:**
 1. Fix the bug in the parameter area after the upgrade
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.1_v06
 **Function & Feature Update:**
 1. Modify the URC processing thread stack space
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.1_v05
 **Function & Feature Update:**
 1. Restore the data to the memory when the remaining space of the buffer cannot be obtained before modifying the storage buffer
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.1_v04
 **Function & Feature Update:**
 1. Fix the false alarm problem of virtual ignition
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.1_v03
 **Function & Feature Update:**
 1. Dormancy report When the GPS is turned on, the GPS related data will not be updated, and the data before dormancy will be reported.
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.1_v02
 **Function & Feature Update:**
 1. Increase ROM space to store code
@@ -397,7 +397,7 @@ AOVX_VX3xx-XX_H2.0_V2.0.1_v02
 5. Parameter adjustment, fix the problem that the parameter area is modified after the updated version
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.1_v01
 **Function & Feature Update:**
 1. Add whether to register, authentication process can be configured, at+loginmode 1: close registration, authentication 0: open registration, authentication by default
@@ -406,14 +406,14 @@ AOVX_VX3xx-XX_H2.0_V2.0.1_v01
 4. Add network standard report in 0x200 message status bit
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.0_v24
 **Function & Feature Update:**
 1. Electronic fence problem modification
 2. Tow mode problem modification
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.0_v23
 **Function & Feature Update:**
 1. Fix the problem that the module is not closed due to the timeout of the QPOWD instruction
@@ -423,14 +423,14 @@ AOVX_VX3xx-XX_H2.0_V2.0.0_v23
 5. Increase the P808 protocol network standard status bit
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.0_v22
 **Function & Feature Update:**
 1. Modify the OTA process (serialize ota step 1 and step 2, if the download fails, you will not try to read ota.bin again, regardless of whether the file exists)
 2. Fix the problem that when the deep sleep IO wakes up, the backup server cannot receive the wakeup message
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.0_v21
 **Function & Feature Update:**
 1. Fix the problem that the GPS is not turned on when the light sleep cycle wakes up. Turn on and off the GPS keywords: OpGps, ClGps
@@ -442,7 +442,7 @@ AOVX_VX3xx-XX_H2.0_V2.0.0_v21
 7. Fix the problem that the backup server cannot receive the ACC ignition message when the deep sleep ACC wakes up
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.0_v20
 **Function & Feature Update:**
 1. Fix the configurable problem of turning on GPS time in light sleep mode
@@ -452,7 +452,7 @@ AOVX_VX3xx-XX_H2.0_V2.0.0_v20
 5. Fix the problem of AccOnTime statistics error
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.0_v19
 **Function & Feature Update:**
 1. Added function: AT+SLEEPGPSSWITCH=1, the time to turn on GPS in light sleep mode can be configured AT+OPENGPSTM, default value: 0 unit: second
@@ -467,7 +467,7 @@ AOVX_VX3xx-XX_H2.0_V2.0.0_v19
 10.bugfix: The voltage threshold of the platform issued parameters is 0
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.0_v18
 **Function & Feature Update:**
 1. Add 5s to print the minor version number once, subV:
@@ -475,14 +475,14 @@ AOVX_VX3xx-XX_H2.0_V2.0.0_v18
 3. Fix the problem that QIOPEN:561 cannot connect to the server continuously
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.0_v17
 **Function & Feature Update:**
 1. Optimize the problem of grouping packets and dual servers after the wake-up of the two-line sleep cycle
 2. When the AT command and the platform issue configuration driving voltage, parking voltage, and sleep voltage for low voltage detection, it will take effect immediately without restarting
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.0_v16
 **Function & Feature Update:**
 1. Add two sleep scenarios: <1>. After the two-line sleep cycle wake-up report is completed <2>. After VCC is removed
@@ -493,7 +493,7 @@ AOVX_VX3xx-XX_H2.0_V2.0.0_v16
 6. Modify the problem that the reporting interval caused by time synchronization is very small
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.0_v15
 **Function & Feature Update:**
 1. ACC interrupt reconfiguration, ACC ignition off reporting logic optimization
@@ -502,7 +502,7 @@ AOVX_VX3xx-XX_H2.0_V2.0.0_v15
 4. Fix the problem that WIFI is turned on during light sleep
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.0_v14
 **Function & Feature Update:**
 1. The default value of CSQ is changed to 98 after power-on, which is different from 99 after command query
@@ -511,14 +511,14 @@ AOVX_VX3xx-XX_H2.0_V2.0.0_v14
 4. Limit the size of the dead zone
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.0_v13
 **Function & Feature Update:**
 1. Bluetooth problem modification
 2. ACC OFF message problem modification
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.0_v12
 **Function & Feature Update:**
 1. Modify the CSQ critical value of the weak network storage blind zone to be less than or equal to 10, or when it is 99
@@ -527,7 +527,7 @@ AOVX_VX3xx-XX_H2.0_V2.0.0_v12
 4. Modify the maximum timeout period of QFREAD to 1 second
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.0_v11
 **Function & Feature Update:**
 1. Increase the weak network environment data packet direct storage buffer mechanism
@@ -538,13 +538,13 @@ AOVX_VX3xx-XX_H2.0_V2.0.0_v11
 6. The maximum timeout time of QIOPEN is changed to 3s
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.0_v10
 **Function & Feature Update:**
 1. Query QIRD buffer time interval modification
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.0_v09
 **Function & Feature Update:**
 1. Increase the processing of QIOPEN return values 563 and 566 to prevent the network socket from entering an infinite loop and failing to connect to the server
@@ -581,7 +581,7 @@ AOVX_VX3xx-XX_H2.0_V2.0.0_v09
 32. GNSS related raw data debugging LOG delete
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.0_v08
 **Function & Feature Update:**
 1. Increase the electronic fence function
@@ -590,7 +590,7 @@ AOVX_VX3xx-XX_H2.0_V2.0.0_v08
 4. GPIO pin modification
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.0_v07
 Release Date: 
 Mon Aug 15 14:34:07 2022
@@ -599,7 +599,7 @@ Mon Aug 15 14:34:07 2022
 2. Optimization of packet loss problem in 5s sending cycle
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.0_v06
 Release Date: 
 Fri Aug 12 09:42:35 2022
@@ -620,7 +620,7 @@ Fri Aug 12 09:42:35 2022
 13. Additional information 0XF7 added in the message
 
 
-**Release Version:**
+# Release Version:
 AOVX_VX3xx-XX_H2.0_V2.0.0_v05
 Release Date: 
 Thu Aug 4 15:39:33 2022
