@@ -1,12 +1,12 @@
 # Release Version:
 AOVX_AX300-XX_H2.0_V2.0.5_v09
-**Function & Feature Update：**
+###### Function & Feature Update：
 1.Modify buffer to check for failed attempts
 
 
 # Release Version:
 AOVX_AX300-XX_H2.0_V2.0.5_v08
-**Function & Feature Update：**
+###### Function & Feature Update：
 1. Modify buffer write failed
 2. Modify the switch between workmode 2 and 4 to change the sampling and reporting time
 3. Modify the tracking mode short connection OTA failed
@@ -15,7 +15,7 @@ AOVX_AX300-XX_H2.0_V2.0.5_v08
 
 # Release Version:
 AOVX_AX300-XX_H2.0_V2.0.5_v07
-**Function & Feature Update：**
+###### Function & Feature Update：
 1. Modify the full battery state and the voltage value does not correspond, restart or the first start-up voltage value is low
 2. Add the battery percentage of A device
 3. Modify the reading value of GSensor to 0, especially in the case of light triggering
@@ -26,7 +26,7 @@ AOVX_AX300-XX_H2.0_V2.0.5_v07
 
 # Release Version:
 AOVX_AX300-XX_H2.0_V2.0.5_v06
-**Function & Feature Update：**
+###### Function & Feature Update：
 1. Modify the platform OTA failure problem
 2. Modify AT commands (QWIFI, QBT, QTEMPHUMI, QADC)
 3. Modify the minimum sampling and reporting time to 360s
@@ -34,7 +34,7 @@ AOVX_AX300-XX_H2.0_V2.0.5_v06
 
 # Release Version:
 AOVX_AX300-XX_H2.0_V2.0.5_v05
-**Function & Feature Update：**
+###### Function & Feature Update：
 1. Modify the maximum power value, light triggers power acquisition
 2. Modify the text message reading, SMS OTA
 3. The default report mask contains neighbor cell information
@@ -43,14 +43,14 @@ AOVX_AX300-XX_H2.0_V2.0.5_v05
 
 # Release Version:
 AOVX_AX300-XX_H2.0_V2.0.5_v04
-**Function & Feature Update：**
+###### Function & Feature Update：
 1. Failed to modify SMS OTA
 2. Modify 8105 response error, OTA success did not reply
 
 
 # Release Version:
 AOVX_AX300-XX_H2.0_V2.0.5_v03
-**Function & Feature Update：**
+###### Function & Feature Update：
 1. Optimize the battery percentage, and the battery fluctuates
 2. Optimize vibration false triggering
 3. Modify the situation where the base station information is obtained successfully, but the message base station is NULL
@@ -61,7 +61,7 @@ AOVX_AX300-XX_H2.0_V2.0.5_v03
 
 # Release Version:
 AOVX_AX300-XX_H2.0_V2.0.5_v02
-**Function & Feature Update：**
+###### Function & Feature Update：
 1. Add AT to query the number of WIFI and BLE, modify the return value of the FORMAT command and delete the blind zone
 2. Modify gsensor to read error value processing and vibration false triggering issues
 3. Do not sleep after modifying the serial port wake-up operation
@@ -75,27 +75,27 @@ AOVX_AX300-XX_H2.0_V2.0.5_v02
 
 # Release Version:
 AOVX_AX300-XX_H2.0_V2.0.5_v01
-**Function & Feature Update：**
+###### Function & Feature Update：
 1.Modify the name of the OTA version to be too long, causing the upgrade to fail
 
 
 # Release Version:
 AOVX_AX300-XX_H2.0_V2.0.4_v27
-**Function & Feature Update：**
+###### Function & Feature Update：
 1. Change the default positioning to GPS+GLO
 2. Modify the analysis error of the main cell of the base station, and add the message analysis of the adjacent cell
 
 
 # Release Version:
 AOVX_AX300-XX_H2.0_V2.0.4_v26
-**Function & Feature Update：**
+###### Function & Feature Update：
 1. Modify periodic sampling and periodic reporting
 2. Mileage is fixed at 0
 
 
 # Release Version:
 AOVX_AX300-XX_H2.0_V2.0.4_v25
-**Function & Feature Update：**
+###### Function & Feature Update：
 1. Modify the problem that periodic sampling will not be performed when there are too many buffer data and the report exceeds 10 minutes
 2. Restore factory delete buffer data
 
@@ -103,26 +103,26 @@ AOVX_AX300-XX_H2.0_V2.0.4_v25
 
 # Release Version:
 AOVX_AX300-XX_H2.0_V2.0.4_v24
-**Function & Feature Update：**
+###### Function & Feature Update：
 1. Modify buffer data processing
 2. MNC changed to 2 bytes
 
 
 # Release Version:
 AOVX_AX300-XX_H2.0_V2.0.4_v23
-**Function & Feature Update：**
+###### Function & Feature Update：
 1.Modify the data length error in the buffer, resulting in a read error
 
 
 # Release Version:
 AOVX_AX300-XX_H2.0_V2.0.4_v22
-**Function & Feature Update：**
+###### Function & Feature Update：
 1.Modify the minimum value of the G-Sensor threshold to 30, and the maximum value of the read light value to 3000
 
 
 # Release Version:
 AOVX_AX300-XX_H2.0_V2.0.4_v21
-**Function & Feature Update：**
+###### Function & Feature Update：
 1. After modifying the server correctly, when reporting periodically, the buffer data is not reported normally
 2. Modify the buffer data CRC error, the platform will not reply
 
@@ -130,7 +130,7 @@ AOVX_AX300-XX_H2.0_V2.0.4_v21
 
 # Release Version:
 AOVX_AX300-XX_H2.0_V2.0.4_v20
-**Function & Feature Update：**
+###### Function & Feature Update：
 1. Add LOG to display blind area read and write offset information, light threshold limit
 2. Modify the buffer header file information and blind area data processing
 
@@ -138,7 +138,7 @@ AOVX_AX300-XX_H2.0_V2.0.4_v20
 
 # Release Version:
 AOVX_AX300-XX_H2.0_V2.0.4_v16
-**Function & Feature Update：**
+###### Function & Feature Update：
 1. Optimize GSensor, battery power, brightness
 2. Add minor version number
 3. Relevant issues such as modification cycle reporting, buffer storage reading, package loss, etc.
